@@ -10,13 +10,29 @@ import SkillWrapper from './SkillWrapper';
 import PassionWrapper from './PassionWrapper';
 import QuestionContainer from './QuestionContainer';
 import Footer from './Footer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DarkMode from './DarkMode';
+import Login from './Login';
+import './Login.css';
+import { UserInfo } from './UserInfo';
 
 const Main = () => {
+  useEffect(() => {
+    localStorage.setItem('id', UserInfo.id);
+    localStorage.setItem('password', UserInfo.password);
+  }, []);
   const [isDark, setIsDark] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
 
-  return (
+  const LoginChange = () => {
+    setIsLogin(true);
+    console.log('ggd');
+    if (isLogin) {
+      localStorage.setItem('stay', true);
+    }
+  };
+
+  return localStorage.getItem('stay') ? (
     <div className={isDark ? 'darkMode' : 'all__container'}>
       <DarkMode darkMode={setIsDark} dark={isDark}></DarkMode>
       <Header dark={isDark}></Header>
@@ -36,6 +52,8 @@ const Main = () => {
         <Footer dark={isDark}></Footer>
       </div>
     </div>
+  ) : (
+    <Login login={LoginChange}></Login>
   );
 };
 
