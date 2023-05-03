@@ -565,6 +565,7 @@ header::after {
   font-weight: 550;
   position: relative;
   line-height: 1.3;
+  white-space: pre-wrap;
 }
 .mbti__content::after {
   content: '';

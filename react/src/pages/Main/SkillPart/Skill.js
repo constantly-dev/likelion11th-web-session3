@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 import Skillitem from './Skillitem';
 const Skill = (props) => {
   const { skill } = props.data;

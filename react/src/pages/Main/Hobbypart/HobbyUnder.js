@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 import HobbyItem from './HobbyItem';
 
 const HobbyUnder = (props) => {

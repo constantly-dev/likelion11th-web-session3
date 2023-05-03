@@ -1,9 +1,9 @@
-import '../../Main.css';
+import '../../../Main.css';
 
 const HobbyUp = (props) => {
   const { hobbyExplain } = props.data;
   return (
-    <div className="hobby__up__wrapper">
+    <div className="hobby__up__wrapper" id="go__hobby">
       <div className="hobby__left">" Hobby "</div>
       <div className="hobby__right">
         {hobbyExplain}

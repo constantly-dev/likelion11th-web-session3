@@ -1,13 +1,16 @@
-import '../../Main.css';
+import { useContext } from 'react';
+import '../../../Main.css';
+import { DarkContext } from '../ExtraData/DarkContext';
 
-const About = (props) => {
+const About = () => {
+  const { isDark } = useContext(DarkContext);
   return (
     <>
       <div className="about__container" id="go__about">
         <div className="abouttag1">
           {'<'} about {'>'}
         </div>
-        <div className={props.isDark ? 'window2__dark' : 'window2'}>
+        <div className={isDark ? 'window2__dark' : 'window2'}>
           <div className="window2__header">
             <div className="rounds2">
               <div className="round round2-1"></div>
@@ -17,7 +20,7 @@ const About = (props) => {
           </div>
           <div className="window2__body">
             <img
-              src={require('../../../src/images/ME.jpg')}
+              src={require('../../../../src/images/ME.jpg')}
               alt="jinhyeok"
               id="me"
             />

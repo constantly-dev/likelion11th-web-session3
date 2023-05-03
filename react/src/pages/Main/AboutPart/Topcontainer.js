@@ -1,12 +1,12 @@
-import '../../Main.css';
+import '../../../Main.css';
 import Screen from './Screen';
 import About from './About';
 
-const Topcontainer = (props) => {
+const Topcontainer = () => {
   return (
     <div className="top__container">
-      <Screen isDark={props.dark}></Screen>
-      <About isDark={props.dark}></About>
+      <Screen></Screen>
+      <About></About>
     </div>
   );
 };

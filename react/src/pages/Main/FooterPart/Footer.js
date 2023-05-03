@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 const Footer = (props) => {
   return (
     <footer className={props.dark ? 'footerDark' : 'footer'}>
@@ -11,7 +11,7 @@ const Footer = (props) => {
           // 한마디로 보안을 위한 것이다.
         >
           <img
-            src={require('../../../src/images/instagram.png')}
+            src={require('../../../../src/images/instagram.png')}
             alt=""
             id="insta"
           />

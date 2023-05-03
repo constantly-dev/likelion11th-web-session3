@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 
 const Header = (props) => {
   return (
@@ -6,7 +6,7 @@ const Header = (props) => {
       <header>
         <a href="#!">
           <img
-            src={require('../../../src/images/mutsalogo.png')}
+            src={require('../../../../src/images/mutsalogo.png')}
             alt="logo"
             className="likelion"
             id="likelion1"

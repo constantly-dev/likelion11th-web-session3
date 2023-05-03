@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 const PassionWrapper = (props) => {
   return (
     <div class="passion__wrapper" id="go__passion">
@@ -16,7 +16,7 @@ const PassionWrapper = (props) => {
         <div class="window3__body">
           <div class="passion__img">
             <img
-              src={require('../../../src/images/DDC2023.jpg')}
+              src={require('../../../../src/images/DDC2023.jpg')}
               alt="DDC2023"
               id="DDC2023"
             />

@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 const SkillExplain_item = () => {
   return <></>;
 };

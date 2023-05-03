@@ -1,11 +1,11 @@
-import '../../Main.css';
+import '../../../Main.css';
 
 const Skillitem = (props) => {
   const skill = props.data;
   return (
     <div className="language">
       <div className="lang__image">
-        <img src={require('../../../src/images/html.png')} alt={skill} />
+        <img src={require('../../../../src/images/html.png')} alt={skill} />
       </div>
       <div className="skillBar__wrapper">
         <div className="skillBar">

@@ -1,7 +1,7 @@
-import '../../Main.css';
+import '../../../Main.css';
 import Skill from './Skill';
 import SkillExplain from './SkillExplain';
-import Data from '../../Data.json';
+import Data from '../../../Data.json';
 
 const SkillWrapper = (props) => {
   return (

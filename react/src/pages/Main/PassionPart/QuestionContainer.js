@@ -1,4 +1,4 @@
-import '../../Main.css';
+import '../../../Main.css';
 
 const QuestionContainer = (props) => {
   return (
@@ -6,8 +6,8 @@ const QuestionContainer = (props) => {
       <div class="groove__animation">
         "???: 멋사 들어갈 생각에 춤이 저절로.."
       </div>
-      <img src={require('../../../src/images/megif.gif')} alt="jinhyeok" />
-      <div class={props.dark ? "easterEggDark" : 'easterEgg'}>
+      <img src={require('../../../../src/images/megif.gif')} alt="jinhyeok" />
+      <div class={props.dark ? 'easterEggDark' : 'easterEgg'}>
         <div id="easterEgg__content">
           = 사실 부족한 실력으로 웹을 만들어 혼이 나간 제 모습💤
         </div>
